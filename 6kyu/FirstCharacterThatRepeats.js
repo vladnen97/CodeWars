@@ -3,7 +3,7 @@
 function firstDup (s) {
     for (let i =0; i < s.length; i++) {
         for (let j = i+1; j < s.length; j++) {
-            if (s[i] === k[j]) return s[i];
+            if (s[i] === s[j]) return s[i];
         }
     }
 }
@@ -13,7 +13,7 @@ function firstDup (s) {
 // }
 
 // function firstDup (s) {
-//     for (var i = 0; i < s.length; ++i) {
+//     for (let i = 0; i < s.length; i++) {
 //         if (s.lastIndexOf(s[i]) != i) return s[i];
 //     }
 // }
